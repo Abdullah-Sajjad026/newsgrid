@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $bp-800) {
+        font-size: 56.25%;
+    }
+
+    @media screen and (max-width: $bp-600) {
+        font-size: 50%;
+    }
+
+}
+
+body {
+    box-sizing: inherit;
+    line-height: 1.5;
+    background-color: #efefef;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 2.5rem 0;
+}

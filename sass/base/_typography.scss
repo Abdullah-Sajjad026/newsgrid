@@ -1,0 +1,68 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 700;
+}
+
+.para {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    color: var(--color-dark);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    transition: all .2s;
+    color: white;
+    background-color: var(--color-dark);
+    display: inline-block;
+    cursor: pointer;
+
+
+    &:hover {
+        opacity: .82;
+    }
+
+    &--primary {
+        background-color: var(--color-primary);
+    }
+
+    &--secondary {
+        background-color: var(--color-secondary);
+    }
+
+    &--light {
+        background-color: var(--color-light);
+    }
+
+    &--block {
+        display: block;
+        text-align: center;
+    }
+}
+
+.heading-1 {
+    font-size: 5rem;
+}
+
+.heading-2 {
+    font-size: 3rem;
+}
+
+.heading-3 {
+    font-size: 2rem;
+}
+
+.heading-4 {
+    font-size: 1.8rem;
+}

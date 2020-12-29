@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #c72727;
+    --color-secondary: #f99500;
+    --color-light: #f3f3f3;
+    --color-dark: #333333;
+    --max-width: 1140px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+$bp-900: 900px;
+$bp-800: 800px;
+$bp-700: 700px;
+$bp-600: 600px;
+$bp-500: 500px;
+$bp-400: 400px;
+
+@media screen and (max-width: $bp-900) {}
+
+@media screen and (max-width: $bp-800) {}
+
+@media screen and (max-width: $bp-700) {}
+
+@media screen and (max-width: $bp-600) {}
+
+@media screen and (max-width: $bp-500) {}
+
+@media screen and (max-width: $bp-400) {}

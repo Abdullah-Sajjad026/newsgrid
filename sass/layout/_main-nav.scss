@@ -1,0 +1,117 @@
+.main-nav {
+    // position: sticky;
+    // top: 0;
+    // right: 0;
+    // z-index: 20;
+    padding: 2rem;
+    font-size: 1.6rem;
+    background-color: white;
+
+    .container {
+
+
+        display: grid;
+        grid-template-columns: 6fr 3fr 2fr;
+        align-items: center;
+
+        @media screen and (max-width: $bp-700) {
+            grid-template-columns: 4fr 2fr;
+            grid-row-gap: 2rem;
+        }
+
+        @media screen and (max-width: $bp-400) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-row-gap: 1rem;
+        }
+
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-self: end;
+
+            @media screen and (max-width: $bp-700) {
+                grid-column: 2/3;
+                grid-row: 1/ 2;
+            }
+
+            @media screen and (max-width: $bp-400) {
+                grid-column: auto;
+                grid-row: auto;
+                justify-self: center;
+            }
+        }
+    }
+
+}
+
+.logo {
+    max-width: 18rem;
+
+
+}
+
+.social-icons {
+    @media screen and (max-width: $bp-700) {
+        grid-column: 1/-1;
+        grid-row: 2 / 3;
+        justify-self: center;
+    }
+
+    @media screen and (max-width: $bp-400) {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    a {
+        text-decoration: none;
+
+        i {
+            color: var(--color-dark);
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    a:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+.nav__item {
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+.nav__link {
+    transition: all .2s;
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        background-color: var(--color-light);
+        color: black;
+        padding: 1rem 2rem;
+
+
+
+    }
+
+    &.current {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+    &:active,
+    &:hover {
+        background-color: var(--color-secondary);
+        color: white;
+    }
+
+
+}
