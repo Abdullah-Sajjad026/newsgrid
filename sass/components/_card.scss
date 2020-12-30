@@ -1,5 +1,6 @@
 .col2-card {
     grid-column: span 2;
+    gap: 1rem;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,13 +15,13 @@
     display: grid;
     gap: 1rem;
     justify-items: start;
+    align-items: center;
+    align-content: center;
 }
 
 .card {
     padding: 2rem;
-    gap: 1rem;
     background-color: #fff;
-    align-items: center;
 
 
     h3 {

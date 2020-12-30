@@ -37,8 +37,8 @@
 
     &__link {
         text-decoration: none;
-        color: white;
         transition: all .2s;
+        color: currentColor;
 
         &:hover {
             color: var(--color-primary);

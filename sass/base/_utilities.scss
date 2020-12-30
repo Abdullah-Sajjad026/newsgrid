@@ -43,6 +43,7 @@
 
 .bg-primary {
     background-color: var(--color-primary) !important;
+    color: #fff !important;
 }
 
 .bg-dark {
@@ -50,8 +51,8 @@
     color: #fff !important;
 }
 
-.bg-primary {
-    background-color: var(--color-primary) !important;
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
     color: #fff !important;
 }
 
@@ -68,5 +69,13 @@
 }
 
 .color-white {
-    color: #fff !important;
+    color: #fff;
+}
+
+
+
+.aside {
+    & > div {
+        margin-bottom: 1.5rem;
+    }
 }

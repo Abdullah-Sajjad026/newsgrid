@@ -1,0 +1,15 @@
+.meta {
+    padding: .5rem 1rem;
+    background-color: var(--color-light);
+    font-size: 1.5rem;
+
+    &__icon {
+        margin-right: 2rem;
+    }
+}
+
+.page-article {
+    &>* {
+        margin: .6rem auto;
+    }
+}

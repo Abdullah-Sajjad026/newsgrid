@@ -34,3 +34,19 @@ img {
 section {
     padding: 2.5rem 0;
 }
+
+// Inner Base Container
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 2rem;
+
+    @media screen and (max-width: $bp-600) {
+        grid-template-columns: 1fr;
+    }
+
+
+    &>.page-article {
+        grid-row: 1 / span 3;
+    }
+}
